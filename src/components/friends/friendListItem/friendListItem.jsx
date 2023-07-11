@@ -6,10 +6,10 @@ import {
   FriendAvatar,
 } from './friendItem.styled';
 
-export const FriendItems = ({ avatar, name, Online }) => {
+export const FriendItems = ({ avatar, name, isOnline }) => {
   return (
     <FriendItem>
-      <FriendOnline Online={Online}></FriendOnline>
+      <FriendOnline isOnline={isOnline}></FriendOnline>
       <FriendAvatar src={avatar} alt={name} width="50px" />
       <FriendAvatarText>{name}</FriendAvatarText>
     </FriendItem>
